@@ -109,15 +109,15 @@ header .contenedor{
     outline: none;
     padding: 10px;
     color: #fff;
-    font-size: 27px;
+    font-size: 25px;
     margin-top: 15px;
 }
 .calculator span{
     display: grid;
-    width: 90px;
-    height: 110px;
+    width: 100px;
+    height: 120px;
     color: #fff;
-    background: #29414d;
+    background: #061a24;
     place-items: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 20px;
@@ -136,12 +136,12 @@ header .contenedor{
 }
 .calculator span.clear{
     grid-column: span 2;
-    width: 180px;
+    width: 200px;
     background: rgb(144, 99, 16);
 }
 .calculator span.plus{
     grid-row: span 2;
-    height: 220px;
+    height: 240px;
 }
 .calculator span.equal{
     background: rgb(144, 99, 16);
