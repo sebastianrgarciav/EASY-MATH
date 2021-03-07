@@ -37,7 +37,7 @@ h1{
 }
 h3{
     font-size: 25px;
-    background: yellowgreen;
+    background: rgb(184, 54, 7);
 }
 /*Menu*/
 #menu-bar{
@@ -109,24 +109,24 @@ header .contenedor{
     margin:20px;
 }
 .info h4{
-    font-size: 14px;
+    font-size: 18px;
 }
 .info a img {
-    width: 90px;
-    height: 90px;
-    border-radius: 10%;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
     border: 3px solid #333;
 }
 
 @media (max-width:320px){
     .info a img {
-        width: 90px;
-        height: 90px;
+        width: 140px;
+        height: 140px;
         border-radius: 10%;
         border: 3px solid #333;
     }
     .info h4 {
-        font-size: 11px;
+        font-size: 15px;
     }
 }
 
@@ -140,6 +140,7 @@ header .contenedor{
         width: 40%;
     }
 }
+
 
 
 
