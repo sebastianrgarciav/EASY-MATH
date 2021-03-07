@@ -109,15 +109,15 @@ header .contenedor{
     outline: none;
     padding: 10px;
     color: #fff;
-    font-size: 30px;
+    font-size: 27px;
     margin-top: 15px;
 }
 .calculator span{
     display: grid;
-    width: 100px;
-    height: 120px;
+    width: 90px;
+    height: 110px;
     color: #fff;
-    background: #0c2835;
+    background: #29414d;
     place-items: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 20px;
@@ -126,25 +126,28 @@ header .contenedor{
     background: gray;
     color:#111;
 }
+.calculator span.clear:active{
+    background: gray;
+    color:#111;
+}
+.calculator span.equal:active{
+    background: gray;
+    color:#111;
+}
 .calculator span.clear{
     grid-column: span 2;
-    width: 200px;
+    width: 180px;
     background: rgb(144, 99, 16);
 }
 .calculator span.plus{
     grid-row: span 2;
-    height: 240px;
+    height: 220px;
 }
 .calculator span.equal{
     background: rgb(144, 99, 16);
 }
 @media (width:320px){
     .calculator .value{
-        grid-column:span 4;
-        height: 100px;
-        text-align: right;
-        border:none;
-        outline: none;
         padding: 8px;
         font-size: 18px;
         color: #fff;
@@ -156,15 +159,12 @@ header .contenedor{
         width: 80px;
         height: 90px;
         color: #fff;
-        background: #0c2835;
         place-items: center;
-        border: 1px solid rgba(0, 0, 0, 0.1);
         font-size: 20px;
     }
     .calculator span.clear{
         grid-column: span 2;
         width: 160px;
-        background: rgb(144, 99, 16);
     }
     .calculator span.plus{
         grid-row: span 2;
@@ -173,31 +173,18 @@ header .contenedor{
 }
 @media (width:360px){
     .calculator .value{
-        grid-column:span 4;
-        height: 100px;
-        text-align: right;
-        border:none;
-        outline: none;
         padding: 10px;
         font-size: 25px;
-        color: #fff;
         margin-top: 20px;
         
     }
     .calculator span{
-        display: grid;
         width: 90px;
         height: 104px;
-        color: #fff;
-        background: #0c2835;
-        place-items: center;
-        border: 1px solid rgba(0, 0, 0, 0.1);
         font-size: 20px;
     }
     .calculator span.clear{
-        grid-column: span 2;
         width: 180px;
-        background: rgb(144, 99, 16);
     }
     .calculator span.plus{
         grid-row: span 2;
@@ -206,46 +193,27 @@ header .contenedor{
 }
 @media (width:375px){
     .calculator .value{
-        grid-column:span 4;
-        height: 100px;
-        text-align: right;
-        border:none;
-        outline: none;
         padding: 10px;
         font-size: 28px;
-        color: #fff;
         margin-top: 10px;
         
     }
     .calculator span{
-        display: grid;
         width: 94px;
         height: 110px;
-        color: #fff;
-        background: #0c2835;
-        place-items: center;
-        border: 1px solid rgba(0, 0, 0, 0.1);
         font-size: 24px;
     }
     .calculator span.clear{
         grid-column: span 2;
         width: 188px;
-        background: rgb(144, 99, 16);
     }
     .calculator span.plus{
-        grid-row: span 2;
         height: 220px;
     }
 }
 @media (width:414px){
     .calculator .value{
-        grid-column:span 4;
-        height: 100px;
-        text-align: right;
-        border:none;
-        outline: none;
         padding: 10px;
-        color: #fff;
         font-size: 28px;
         margin-top: 20px;
         
@@ -254,16 +222,10 @@ header .contenedor{
         display: grid;
         width: 104px;
         height: 110px;
-        color: #fff;
-        background: #0c2835;
-        place-items: center;
-        border: 1px solid rgba(0, 0, 0, 0.1);
         font-size: 20px;
     }
     .calculator span.clear{
-        grid-column: span 2;
         width: 208px;
-        background: rgb(144, 99, 16);
     }
     .calculator span.plus{
         grid-row: span 2;
@@ -272,34 +234,20 @@ header .contenedor{
 }
 @media (max-width:280px){
     .calculator .value{
-        grid-column:span 4;
-        height: 100px;
-        text-align: right;
-        border:none;
-        outline: none;
         padding: 10px;
-        color: #fff;
         font-size: 22px;
         margin-top: 20px;
         
     }
     .calculator span{
-        display: grid;
         width: 70px;
         height: 80px;
-        color: #fff;
-        background: #0c2835;
-        place-items: center;
-        border: 1px solid rgba(0, 0, 0, 0.1);
         font-size: 20px;
     }
     .calculator span.clear{
-        grid-column: span 2;
-        width: 140px;
-        background: rgb(144, 99, 16);
+        width: 140px
     }
     .calculator span.plus{
-        grid-row: span 2;
         height: 160px;
     }
 }
