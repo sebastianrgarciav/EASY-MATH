@@ -99,6 +99,7 @@ header .contenedor{
 .calculator{
     position:relative;
     display: grid;
+    margin-top: 30px;
 }
 .calculator .value{
     grid-column:span 4;
@@ -107,18 +108,19 @@ header .contenedor{
     border:none;
     outline: none;
     padding: 10px;
-    font-size: 18px;
     color: #fff;
-    font-size: 21px;
+    font-size: 30px;
+    margin-top: 15px;
 }
 .calculator span{
     display: grid;
-    width: 80px;
-    height: 100px;
+    width: 100px;
+    height: 120px;
     color: #fff;
     background: #0c2835;
     place-items: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 20px;
 }
 .calculator span:active{
     background: gray;
@@ -126,12 +128,12 @@ header .contenedor{
 }
 .calculator span.clear{
     grid-column: span 2;
-    width: 160px;
+    width: 200px;
     background: rgb(144, 99, 16);
 }
 .calculator span.plus{
     grid-row: span 2;
-    height: 200px;
+    height: 240px;
 }
 .calculator span.equal{
     background: rgb(144, 99, 16);
@@ -143,12 +145,11 @@ header .contenedor{
         text-align: right;
         border:none;
         outline: none;
-        padding: 10px;
+        padding: 8px;
         font-size: 18px;
         color: #fff;
-        font-size: 18px;
-        margin-top: 20px;
-        
+        font-size: 24px;
+        margin-top: 10px;
     }
     .calculator span{
         display: grid;
@@ -158,6 +159,7 @@ header .contenedor{
         background: #0c2835;
         place-items: center;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 20px;
     }
     .calculator span.clear{
         grid-column: span 2;
@@ -177,9 +179,8 @@ header .contenedor{
         border:none;
         outline: none;
         padding: 10px;
-        font-size: 18px;
+        font-size: 25px;
         color: #fff;
-        font-size: 18px;
         margin-top: 20px;
         
     }
@@ -191,6 +192,7 @@ header .contenedor{
         background: #0c2835;
         place-items: center;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 20px;
     }
     .calculator span.clear{
         grid-column: span 2;
@@ -210,10 +212,9 @@ header .contenedor{
         border:none;
         outline: none;
         padding: 10px;
-        font-size: 18px;
+        font-size: 28px;
         color: #fff;
-        font-size: 18px;
-        margin-top: 20px;
+        margin-top: 10px;
         
     }
     .calculator span{
@@ -224,6 +225,7 @@ header .contenedor{
         background: #0c2835;
         place-items: center;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 24px;
     }
     .calculator span.clear{
         grid-column: span 2;
@@ -243,9 +245,8 @@ header .contenedor{
         border:none;
         outline: none;
         padding: 10px;
-        font-size: 18px;
         color: #fff;
-        font-size: 18px;
+        font-size: 28px;
         margin-top: 20px;
         
     }
@@ -257,6 +258,7 @@ header .contenedor{
         background: #0c2835;
         place-items: center;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 20px;
     }
     .calculator span.clear{
         grid-column: span 2;
@@ -276,9 +278,8 @@ header .contenedor{
         border:none;
         outline: none;
         padding: 10px;
-        font-size: 18px;
         color: #fff;
-        font-size: 18px;
+        font-size: 22px;
         margin-top: 20px;
         
     }
@@ -290,6 +291,7 @@ header .contenedor{
         background: #0c2835;
         place-items: center;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 20px;
     }
     .calculator span.clear{
         grid-column: span 2;
