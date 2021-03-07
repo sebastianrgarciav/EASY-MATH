@@ -109,7 +109,7 @@ header .contenedor{
     outline: none;
     padding: 10px;
     color: #fff;
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 15px;
 }
 .calculator span{
@@ -137,14 +137,14 @@ header .contenedor{
 .calculator span.clear{
     grid-column: span 2;
     width: 200px;
-    background: rgb(144, 99, 16);
+    background: rgb(99, 167, 35);
 }
 .calculator span.plus{
     grid-row: span 2;
     height: 240px;
 }
 .calculator span.equal{
-    background: rgb(144, 99, 16);
+    background: rgb(99, 167, 35);
 }
 @media (width:320px){
     .calculator .value{
