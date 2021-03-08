@@ -93,7 +93,7 @@ header .contenedor{
 }
 #base {
     color: #fff;
-    font-size: 28px;
+    font-size: 27px;
     font-family: Verdana;
     text-align: center;
     margin-bottom: 50px;
@@ -102,12 +102,21 @@ header .contenedor{
     font-size: 40px;
 }
 #base input{
-    font-size: 28px;
+    font-size: 32px;
     justify-items: center;
     text-align: left;
     height: 40px;
     color: #fff;
     border:solid 3px #fff;
+    
+}
+#opcion{
+    border:solid 3px #fff;
+    font-size: 27px;
+    color:#fff;
+}
+#año,#meses{
+    font-size: 15px;
     
 }
 #conver{
@@ -137,6 +146,13 @@ header .contenedor{
     }
 }
 @media (width:320px){
+    #base {
+        color: #fff;
+        font-size: 23px;
+        font-family: Verdana;
+        text-align: center;
+        margin-bottom: 50px;
+    }
     #base input{
     font-size: 24px;
     justify-items: center;
@@ -147,13 +163,23 @@ header .contenedor{
     
     }
     #conver{
-        font-size: 30px;
+        font-size: 28px;
         border: solid 3px #fff;
         color: #fff;
         font-family: Verdana;
         text-align: center;
     }
+    #opcion{
+        border:solid 3px #fff;
+        font-size: 24px;
+        color:#fff;
+    }
+    #año,#meses{
+        font-size: 18px;
+        
+    }
 }
+
 @media (width:280px){
     #base input{
     font-size: 21px;
