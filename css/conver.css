@@ -9,6 +9,7 @@
 }
 body {
     font-family: 'Open Sans',sans-serif;
+
 }
 header{
     width: 100%;
@@ -34,10 +35,6 @@ header{
 
 h1{
     float: left;
-}
-h3{
-    font-size: 25px;
-    background: yellowgreen;
 }
 /*Menu*/
 #menu-bar{
@@ -94,52 +91,84 @@ header .contenedor{
     }
 
 }
-#categorias {
-    background: #333;
+#base {
     color: #fff;
+    font-size: 28px;
+    font-family: Verdana;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#result{
+    font-size: 40px;
+}
+#base input{
+    font-size: 32px;
+    justify-items: center;
+    text-align: left;
+    height: 40px;
+    color: #fff;
+    border:solid 3px #fff;
+    
+}
+#conver{
+    font-size: 30px;
+    border: solid 4px #fff;
+    font-family: Impact;
+    color: #fff;
+    font-family: Verdana;
     text-align: center;
 }
-#categorias .contenedor{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.info{
-    margin:20px;
-}
-.info h4{
-    font-size: 17px;
-}
-.info a img {
-    width: 130px;
-    height: 130px;
-    border-radius: 20%;
-    border: 3px solid black;
-}
-
-@media (max-width:320px){
-    .info a img {
-        width: 100px;
-        height: 100px;
-        border-radius: 15%;
-        border: 3px solid #333;
+@media (max-width:413px){
+    #base input{
+    font-size: 28.5px;
+    justify-items: center;
+    text-align: left;
+    height: 50px;
+    color: #fff;
+    border:solid 3px #fff;
+    
     }
-    .info h4 {
-        font-size: 15px;
+    #conver{
+        font-size: 30px;
+        border: solid 3px #fff;
+        color: #fff;
+        font-family: Verdana;
+        text-align: center;
     }
 }
-
-@media (min-width:480px){
-    .info{
-        width: 40%;
+@media (width:320px){
+    #base input{
+    font-size: 25px;
+    justify-items: center;
+    text-align: left;
+    height: 50px;
+    color: #fff;
+    border:solid 3px #fff;
+    
+    }
+    #conver{
+        font-size: 30px;
+        border: solid 3px #fff;
+        color: #fff;
+        font-family: Verdana;
+        text-align: center;
     }
 }
-@media (min-width:1024px){
-    .info{
-        width: 40%;
+@media (width:280px){
+    #base input{
+    font-size: 21px;
+    justify-items: center;
+    text-align: left;
+    height: 50px;
+    color: #fff;
+    border:solid 3px #fff;
+    
+    }
+    #conver{
+        font-size: 27px;
+        border: solid 3px #fff;
+        color: #fff;
+        font-family: Verdana;
+        text-align: center;
     }
 }
-
-
-

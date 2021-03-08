@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Easy-Math</title>
+        <!---Estilos-->
+        <link rel="stylesheet" type="text/css" href="css/conver.css"/>                                                                                                                  
+        <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    </head>
+    <body>
+        
+       <header>
+           <div class="contenedor">
+               <h1 >E A S Y - M A T H</h1>
+               <input type="checkbox" id="menu-bar">
+               <label class="icon-stack" for="menu-bar"></label>
+               <nav class="menu">
+                    <a href="index.html"><span class="icon-home3"></span> Home</a>
+               </nav>
+           </div>
+       </header>
+       <br/>
+
+       <div id="base">
+            <form  name="" method="post">
+                <br/>
+                <br/>
+                <p>EN METROS ES:
+                    <br>
+                    <br>
+                    <span id="result"></span>
+                    <span id="unit"></span>
+                </p>
+                <br/>
+                <input type="number" name="" id="value1" autofocus placeholder="KILOMETROS">
+                <br/>
+            </form>
+        </div>
+
+        <div id="conver">
+            <span id="num" onclick="metros();">CONVERTIR</span>
+        </div>
+        <script type="text/javascript" src="js/funciones.js"></script>
+    </body>
+    
+</html>
