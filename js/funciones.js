@@ -134,3 +134,46 @@ function inteTasa(){
         }
     }
 }
+
+function primerG(){
+    var x =parseFloat(document.getElementById('value1').value);
+    var y =parseFloat(document.getElementById('value2').value);
+    document.getElementById('unit').innerHTML = "X:   ";
+    var valor = ((-y)/x).toFixed(2);
+    document.getElementById('result').innerHTML = valor;
+    if(valor >= 99999){
+        document.getElementById('result').style.fontSize="22px";
+        document.getElementById('unit').style.fontSize="22px";
+    }
+    else{
+        document.getElementById('result').style.fontSize="32px";
+        document.getElementById('unit').style.fontSize="32px";
+    }
+    
+}
+function segundoG(){
+    var x =parseFloat(document.getElementById('value1').value);
+    var y =parseFloat(document.getElementById('value2').value);
+    var z =parseFloat(document.getElementById('value3').value);
+    document.getElementById('unit1').innerHTML = "x1:   ";
+    var valor =((-y)+((y)**2-(4*x*z))**0.5)/(2*x);
+    document.getElementById('result1').innerHTML = valor.toFixed(3);
+    document.getElementById('unit2').innerHTML = "x2:   ";
+    var valor = ((-y)-((y)**2-(4*x*z))**0.5)/(2*x);
+    document.getElementById('result2').innerHTML = valor.toFixed(3);
+
+    if(valor >= 99999){
+        document.getElementById('result1').style.fontSize="21px";
+        document.getElementById('unit1').style.fontSize="21px";
+        document.getElementById('result2').style.fontSize="21px";
+        document.getElementById('unit2').style.fontSize="21px";
+    }
+    else{
+        document.getElementById('result1').style.fontSize="32px";
+        document.getElementById('unit1').style.fontSize="32px";
+        document.getElementById('result2').style.fontSize="32px";
+        document.getElementById('unit2').style.fontSize="32px";
+    }
+
+}
+

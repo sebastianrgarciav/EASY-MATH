@@ -110,15 +110,7 @@ header .contenedor{
     border:solid 3px #fff;
     
 }
-#opcion{
-    border:solid 3px #fff;
-    font-size: 27px;
-    color:#fff;
-}
-#año,#meses{
-    font-size: 15px;
-    
-}
+
 #conver{
     font-size: 28px;
     border: solid 4px #fff;
@@ -169,15 +161,7 @@ header .contenedor{
         font-family: Verdana;
         text-align: center;
     }
-    #opcion{
-        border:solid 3px #fff;
-        font-size: 24px;
-        color:#fff;
-    }
-    #año,#meses{
-        font-size: 18px;
-        
-    }
+
 }
 
 @media (width:280px){
