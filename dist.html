@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Easy-Math</title>
+        <!---Estilos-->
+        <link rel="stylesheet" type="text/css" href="css/plano.css"/>                                                                                                                  
+        <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    </head>
+    <body>
+        
+       <header>
+           <div class="contenedor">
+               <h1 >E A S Y - M A T H</h1>
+               <input type="checkbox" id="menu-bar">
+               <label class="icon-stack" for="menu-bar"></label>
+               <nav class="menu">
+                    <a href="index.html"><span class="icon-home3"></span> Home</a>
+               </nav>
+           </div>
+        </header>
+        <br/>
+        <br/>
+        <br/>
+        <p style="background-color: rgb(15, 147, 223); padding : 3px;">D = √(x2-x1)² + (y2-y1)²</p>
+        
+        <div id="base">
+            <form  name="" method="post">
+                <span id="unit1"></span>
+                <span id="result1"></span>
+                <br>
+                <br>
+                <label>VALOR DE X1:</label>
+                <br/>
+                <input type="number" name="" id="value1" autofocus placeholder=" x1">
+                <br/>
+                <label>VALOR DE X2:</label>
+                <br/>
+                <input type="number" name="" id="value2" autofocus placeholder=" x2">
+                <br/>
+                <label>VALOR DE Y1:</label>
+                <br/>
+                <input type="number" name="" id="value3" autofocus placeholder=" y1">
+                <br/>
+                <label>VALOR DE Y2:</label>
+                <br/>
+                <input type="number" name="" id="value4" autofocus placeholder=" y2">
+                <br/>
+
+
+            </form>
+        </div>
+        <div id="conver">
+            <span id="num" onclick="dist();">CALCULAR</span>
+        </div>
+        <script type="text/javascript" src="js/funciones.js"></script>
+       
+    </body>
+    
+</html>
