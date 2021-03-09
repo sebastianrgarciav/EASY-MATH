@@ -77,7 +77,7 @@ function inteCompuesto(){
     var selectValue =document.getElementById('opcion').value;
     document.getElementById('unit').innerHTML = "Und";
     if(selectValue == "Meses"){
-        var meses = ((x*(1+y/100))**(z/12)).toFixed(2);
+        var meses = (x*((1+y/100)**(z/12))).toFixed(2);
         document.getElementById('result').innerHTML = meses;
         if(meses >= 99999){
             document.getElementById('result').style.fontSize="21px";
@@ -90,7 +90,7 @@ function inteCompuesto(){
 
     }
     else{
-        var year = ((x*(1+y/100))**z).toFixed(2);
+        var year = (x*((1+y/100)**z)).toFixed(2);
         document.getElementById('result').innerHTML = year;
         if(year >= 99999){
             document.getElementById('result').style.fontSize="21px";
