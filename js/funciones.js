@@ -282,3 +282,46 @@ function pend(){
     }
 }
 
+function triang(){
+    var x =parseFloat(document.getElementById('value1').value);
+    var y =parseFloat(document.getElementById('value2').value);
+    var z =parseFloat(document.getElementById('value3').value);
+    
+    var absol = (Math.abs(x-y+z*0));
+    var s = (x+y+z)/2;
+    if (absol<z && z<x+y){
+        if(x==y && y==z && z==x ){
+            document.getElementById('result1').innerHTML = "EQUILATERO";
+            document.getElementById('unit1').innerHTML = "Ar:";
+            document.getElementById('area').innerHTML = ((s*(s-x)*(s-y)*(s-z))**0.5).toFixed(2);
+            document.getElementById('unit2').innerHTML = "P: ";
+            document.getElementById('perimetro').innerHTML = (s*2).toFixed(2);
+        }
+        else if((x==y && x!=z &&y!=z) || (y==z && y!=x &&z!=x) ||(z==x && z!=y &&x!=y) ){
+            document.getElementById('result1').innerHTML = "ISOSCELES";
+            document.getElementById('unit1').innerHTML = "Ar:";
+            document.getElementById('area').innerHTML = ((s*(s-x)*(s-y)*(s-z))**0.5).toFixed(2);
+            document.getElementById('unit2').innerHTML = "P: ";
+            document.getElementById('perimetro').innerHTML = (s*2).toFixed(2);
+        }
+        else if(x!=y&& y!=z && z!=x ){
+            document.getElementById('result1').innerHTML = "ESCALENO";
+            document.getElementById('unit1').innerHTML = "Ar:";
+            document.getElementById('area').innerHTML = ((s*(s-x)*(s-y)*(s-z))**0.5).toFixed(2);
+            document.getElementById('unit2').innerHTML = "P: ";
+            document.getElementById('perimetro').innerHTML = (s*2).toFixed(2);
+        }
+
+    }
+    else{
+        document.getElementById('result1').innerHTML = "NO EXISTE EL TRIANGULO";
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = "NaN";
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = "NaN";
+
+    }
+    
+
+}
+
