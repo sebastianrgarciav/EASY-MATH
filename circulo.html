@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Easy-Math</title>
+        <!---Estilos-->
+        <link rel="stylesheet" type="text/css" href="css/fig.css"/>                                                                                                                  
+        <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    </head>
+    <body>
+        
+       <header>
+           <div class="contenedor">
+               <h1 >E A S Y - M A T H</h1>
+               <input type="checkbox" id="menu-bar">
+               <label class="icon-stack" for="menu-bar"></label>
+               <nav class="menu">
+                    <a href="index.html"><span class="icon-home3"></span> Home</a>
+               </nav>
+           </div>
+       </header>
+       <br/>
+       <br/>
+        <p style=" padding : 3px;">
+            <a href="#"><img src="img/circulo.png" style="height: 160px;" alt=""></a>
+        </p>
+       <div id="base">
+            <form  name="" method="post">
+                <span id="result1"></span>
+                <br>
+                <span id="unit1"></span>
+                <span id="area"></span>
+                <span id="unit11"></span>
+                <br>
+                <span id="unit2"></span>
+                <span id="perimetro"></span>
+                <span id="unit12"></span>
+                <br>
+                <br>
+                <label>VALOR DEL RADIO</label>
+                <br/>
+                <input type="number" name="" id="value1" autofocus placeholder=" R : Radio">
+                <br/>
+                <br/>
+                <label>RPTA EN: </label>
+                <select id ="opcion" name="opcion" data-validation="required">
+                    <option id="rad" value="rad">Estandar</option>
+                    <option id="decimal" value="decimal">Decimal</option>
+                </select>
+            </form>
+        </div>
+        <div id="conver">
+            <span id="num" onclick="circulo();">CALCULAR</span>
+        </div>
+        <script type="text/javascript" src="js/funciones.js"></script>
+       
+    </body>
+    
+</html>

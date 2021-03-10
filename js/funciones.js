@@ -269,9 +269,9 @@ function pend(){
     var y =parseFloat(document.getElementById('value2').value);
     var z =parseFloat(document.getElementById('value3').value);
     var w =parseFloat(document.getElementById('value4').value);
-    document.getElementById('unit1').innerHTML = "D = ";
+    document.getElementById('unit1').innerHTML = "m = ";
     var valor = ((w-z)/(y-x));
-    document.getElementById('result1').innerHTML = valor.toFixed(2);
+    document.getElementById('result1').innerHTML = valor.toFixed(3);
     if(valor >= 99999|| valor<= -99999){
         document.getElementById('result1').style.fontSize="21px";
         document.getElementById('unit1').style.fontSize="21px";
@@ -321,7 +321,208 @@ function triang(){
         document.getElementById('perimetro').innerHTML = "NaN";
 
     }
-    
-
+}
+function lado(){
+    var x =parseFloat(document.getElementById('value1').value);
+    var valor = x;
+    if (valor>0){
+        document.getElementById('result1').innerHTML = "CUADRADO";
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = (x*x).toFixed(2);
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = (x*4).toFixed(2);
+        document.getElementById('unit3').innerHTML = "D: ";
+        document.getElementById('diagonal').innerHTML = (x*((2)**0.5)).toFixed(2);
+    }
+    else{
+        document.getElementById('result1').innerHTML = "NO EXISTE EL CUADRADO";
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = "NaN";
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = "NaN";
+        document.getElementById('unit3').innerHTML = "D: ";
+        document.getElementById('diagonal').innerHTML = "NaN";
+    }
+}
+function diagonal(){
+    var x =parseFloat(document.getElementById('value1').value);
+    var valor = x;
+    if (valor>0){
+        document.getElementById('result1').innerHTML = "CUADRADO";
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = ((x*x)/2).toFixed(2);
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = ((x*4)/(2**0.5)).toFixed(2);
+        document.getElementById('unit3').innerHTML = "L: ";
+        document.getElementById('diagonal').innerHTML = (((x*x)/2)**0.5).toFixed(2);
+    }
+    else{
+        document.getElementById('result1').innerHTML = "NO EXISTE EL CUADRADO";
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = "NaN";
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = "NaN";
+        document.getElementById('unit3').innerHTML = "L: ";
+        document.getElementById('diagonal').innerHTML = "NaN";
+    }
+}
+function rec(){
+    var x =parseFloat(document.getElementById('value1').value);
+    var y =parseFloat(document.getElementById('value2').value);
+    if (x>0 && y>0){
+        document.getElementById('result1').innerHTML = "RECTANGULO";
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = (x*y).toFixed(2);
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = (x*2+y*2).toFixed(2);
+        document.getElementById('unit3').innerHTML = "D: ";
+        document.getElementById('diagonal').innerHTML = ((x**2 + y**2)**0.5).toFixed(2);
+    }
+    else{
+        document.getElementById('result1').innerHTML = "RECTANGULO INEXISTENTE" ;
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = "NaN";
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = "NaN";
+        document.getElementById('unit3').innerHTML = "D: ";
+        document.getElementById('diagonal').innerHTML = "NaN";
+    }
+}
+function rombo(){
+    var x =parseFloat(document.getElementById('value1').value);
+    var y =parseFloat(document.getElementById('value2').value);
+    if (x>0 && y>0){
+        document.getElementById('result1').innerHTML = "ROMBO";
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = ((x*y)/2).toFixed(2);
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = ((((x/2)**2 + (y/2)**2)**0.5)*4).toFixed(2);
+        document.getElementById('unit3').innerHTML = "L: ";
+        document.getElementById('diagonal').innerHTML = (((x/2)**2 + (y/2)**2)**0.5).toFixed(2);
+    }
+    else{
+        document.getElementById('result1').innerHTML = "ROMBO INEXISTENTE" ;
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = "NaN";
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = "NaN";
+        document.getElementById('unit3').innerHTML = "L: ";
+        document.getElementById('diagonal').innerHTML = "NaN";
+    }
 }
 
+function trape(){
+    var x =parseFloat(document.getElementById('value1').value);
+    var y =parseFloat(document.getElementById('value2').value);
+    var z =parseFloat(document.getElementById('value3').value);
+    var i = (x-y)/2
+    if (x>0 && y>0 && z>0){
+        document.getElementById('result1').innerHTML = "TRAPECIO";
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = (((x+y)*z)/2).toFixed(2);
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = (x+y+((i**2 + z**2)**0.5)*2).toFixed(2);
+        document.getElementById('unit3').innerHTML = "Lado: ";
+        document.getElementById('diagonal').innerHTML = (((i**2 + z**2)**0.5)).toFixed(2);
+    }
+    else{
+        document.getElementById('result1').innerHTML = "TRAPECIO INEXISTENTE" ;
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = "NaN";
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = "NaN";
+        document.getElementById('unit3').innerHTML = "Lado: ";
+        document.getElementById('diagonal').innerHTML = "NaN";
+    }
+}
+
+function penta(){
+    var x =parseFloat(document.getElementById('value1').value);
+    var y =parseFloat(document.getElementById('value2').value);
+    var p= x*5;
+    if (x>0 && y>0 && x>y){
+        document.getElementById('result1').innerHTML = "PENTAGONO";
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = ((p*y)/2).toFixed(2);
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = (p).toFixed(2);
+       
+    }
+    else{
+        document.getElementById('result1').innerHTML = "PENTAGONO INEXISTENTE" ;
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = "NaN";
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = "NaN";
+
+    }
+}
+function hexa(){
+    var x =parseFloat(document.getElementById('value1').value);
+    var y =parseFloat(document.getElementById('value2').value);
+    var p= x*6;
+    if (x>0 && y>0 && x>y){
+        document.getElementById('result1').innerHTML = "HEXAGONO";
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = ((p*y)/2).toFixed(2);
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = (p).toFixed(2);
+       
+    }
+    else{
+        document.getElementById('result1').innerHTML = "HEXAGONO INEXISTENTE" ;
+        document.getElementById('unit1').innerHTML = "Ar:";
+        document.getElementById('area').innerHTML = "NaN";
+        document.getElementById('unit2').innerHTML = "P: ";
+        document.getElementById('perimetro').innerHTML = "NaN";
+
+    }
+}
+
+function circulo(){
+    var x =parseFloat(document.getElementById('value1').value);
+    var selectValue =document.getElementById('opcion').value;
+    if(selectValue == "decimal"){
+        if (x>0){
+            document.getElementById('result1').innerHTML = "CIRCULO";
+            document.getElementById('unit1').innerHTML = "Ar:";
+            document.getElementById('area').innerHTML = (Math.PI*(x**2)).toFixed(2);
+            document.getElementById('unit11').innerHTML = "";
+            document.getElementById('unit2').innerHTML = "P: ";
+            document.getElementById('perimetro').innerHTML = (2*Math.PI*x).toFixed(2);
+            document.getElementById('unit12').innerHTML = "";
+           
+        }
+        else{
+            document.getElementById('result1').innerHTML = "CIRCULO INEXISTENTE" ;
+            document.getElementById('unit1').innerHTML = "Ar:";
+            document.getElementById('area').innerHTML = "NaN";
+            document.getElementById('unit11').innerHTML = "";
+            document.getElementById('unit2').innerHTML = "P: ";
+            document.getElementById('perimetro').innerHTML = "NaN";
+            document.getElementById('unit12').innerHTML = "";
+        }
+
+    }
+    else{
+        if (x>0){
+            document.getElementById('result1').innerHTML = "CIRCULO";
+            document.getElementById('unit1').innerHTML = "Ar:";
+            document.getElementById('area').innerHTML = ((x**2)).toFixed(2);
+            document.getElementById('unit11').innerHTML = " π ";
+            document.getElementById('unit2').innerHTML = "P: ";
+            document.getElementById('perimetro').innerHTML = (2*x).toFixed(2);
+            document.getElementById('unit12').innerHTML = " π ";
+           
+        }
+        else{
+            document.getElementById('result1').innerHTML = "CIRCULO INEXISTENTE" ;
+            document.getElementById('unit1').innerHTML = "Ar:";
+            document.getElementById('area').innerHTML = "NaN";
+            document.getElementById('unit11').innerHTML = "";
+            document.getElementById('unit2').innerHTML = "P: ";
+            document.getElementById('perimetro').innerHTML = "NaN";
+            document.getElementById('unit12').innerHTML = "";
+        }
+    }
+}

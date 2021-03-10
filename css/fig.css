@@ -91,7 +91,7 @@ header .contenedor{
     }
 
 }
-
+ 
 #base,p {
     color: #fff;
     font-size: 26.5px;
@@ -119,7 +119,15 @@ p{
     border:solid 3px #fff;
     
 }
-
+#opcion{
+    border:solid 3px #fff;
+    font-size: 27px;
+    color:#fff;
+}
+#decimal,#rad{
+    font-size: 15px;
+    
+}
 #conver{
     font-size: 28px;
     border: solid 4px #fff;
