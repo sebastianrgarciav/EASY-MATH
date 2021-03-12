@@ -99,10 +99,10 @@ header .contenedor{
     margin-bottom: 50px;
 }
 #result{
-    font-size: 40px;
+    font-size: 28px;
 }
 #base input{
-    font-size: 28px;
+    font-size: 25px;
     justify-items: center;
     text-align: left;
     height: 40px;
@@ -110,8 +110,15 @@ header .contenedor{
     border:solid 3px #fff;
     
 }
+#opcion1,#opcion2{
+    border:solid 3px #fff;
+    font-size: 27px;
+    color:#fff;
+    margin: 10px;
+}
+
 #conver{
-    font-size: 30px;
+    font-size: 23px;
     border: solid 4px #fff;
     font-family: Impact;
     color: #fff;
@@ -129,7 +136,7 @@ header .contenedor{
     
     }
     #conver{
-        font-size: 30px;
+        font-size: 30px; 
         border: solid 3px #fff;
         color: #fff;
         font-family: Verdana;
@@ -147,7 +154,7 @@ header .contenedor{
     
     }
     #conver{
-        font-size: 30px;
+        font-size: 23px;
         border: solid 3px #fff;
         color: #fff;
         font-family: Verdana;

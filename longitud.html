@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Easy-Math</title>
+        <!---Estilos-->
+        <link rel="stylesheet" type="text/css" href="css/conver.css"/>                                                                                                                  
+        <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    </head>
+    <body>
+        
+       <header>
+           <div class="contenedor">
+               <h1 >E A S Y - M A T H</h1>
+               <input type="checkbox" id="menu-bar">
+               <label class="icon-stack" for="menu-bar"></label>
+               <nav class="menu">
+                    <a href="index.html"><span class="icon-home3"></span> Home</a>
+               </nav>
+           </div>
+       </header>
+       <br/>
+
+       <div id="base">
+            <form  name="" method="post">
+                <br/>
+                <br/>
+                <p>LA CONVERSION ES:
+                    <br>
+                    <br>
+                    <span id="result"></span>
+                    <span id="unit"></span>
+                </p>
+                <br/>
+                <input type="number" name="" id="value1" autofocus placeholder=" Ingresar valor inicial">
+                <br/>
+                <br/>
+                <label >VALOR INICIAL </label>
+                <br/>
+                <select id ="opcion1" name="opcion1" data-validation="required" >
+                    <option id="kilometro" value="kilometro" style="font-size:15px;">Kilometro</option>
+                    <option id="metro" value="metro"style="font-size:15px;">Metro</option>
+                    <option id="cm" value="cm" style="font-size:15px;">Centimetro</option>
+                    <option id="milimetro" value="milimetro" style="font-size:15px;">Milimetro</option>
+                    <option id="micrometro" value="micrometro" style="font-size:15px;">Micrometro</option>
+                    <option id="milla" value="milla" style="font-size:15px;">Milla</option>
+                    <option id="yarda" value="yarda" style="font-size:15px;">Yarda</option>
+                    <option id="pie" value="pie" style="font-size:15px;">Pie</option>
+                    <option id="pulgada" value="pulgada" style="font-size:15px;">Pulgada</option>
+                </select>
+                <br/>
+                <label >VALOR FINAL </label>
+                <br/>
+                <select id ="opcion2" name="opcion2" data-validation="required">
+                    <option id="kilometro" value="kilometro" style="font-size:15px;">Kilometro</option>
+                    <option id="metro" value="metro"style="font-size:15px;">Metro</option>
+                    <option id="cm" value="cm" style="font-size:15px;">Centimetro</option>
+                    <option id="milimetro" value="milimetro" style="font-size:15px;">Milimetro</option>
+                    <option id="micrometro" value="micrometro" style="font-size:15px;">Micrometro</option>
+                    <option id="milla" value="milla" style="font-size:15px;">Milla</option>
+                    <option id="yarda" value="yarda" style="font-size:15px;">Yarda</option>
+                    <option id="pie" value="pie" style="font-size:15px;">Pie</option>
+                    <option id="pulgada" value="pulgada" style="font-size:15px;">Pulgada</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="conver" style="margin-top: -20px;">
+            <span id="num" onclick="longi();">CONVERTIR</span>
+        </div>
+        <script type="text/javascript" src="js/funciones.js"></script>
+    </body>
+    
+</html>

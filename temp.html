@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Easy-Math</title>
+        <!---Estilos-->
+        <link rel="stylesheet" type="text/css" href="css/conver.css"/>                                                                                                                  
+        <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    </head>
+    <body>
+        
+       <header>
+           <div class="contenedor">
+               <h1 >E A S Y - M A T H</h1>
+               <input type="checkbox" id="menu-bar">
+               <label class="icon-stack" for="menu-bar"></label>
+               <nav class="menu">
+                    <a href="index.html"><span class="icon-home3"></span> Home</a>
+               </nav>
+           </div>
+       </header>
+       <br/>
+
+       <div id="base">
+            <form  name="" method="post">
+                <br/>
+                <br/>
+                <p>LA CONVERSION ES:
+                    <br>
+                    <br>
+                    <span id="result"></span>
+                    <span id="unit"></span>
+                </p>
+                <br/>
+                <input type="number" name="" id="value1" autofocus placeholder=" Ingresar valor inicial">
+                <br/>
+                <br/>
+                <label >VALOR INICIAL </label>
+                <br/>
+                <select id ="opcion1" name="opcion1" data-validation="required" >
+                    <option id="celsius" value="celsius" style="font-size:15px;">Celsius</option>
+                    <option id="fahrenheit" value="fahrenheit"style="font-size:15px;">Fahrenheit</option>
+                    <option id="kelvin" value="kelvin"style="font-size:15px;">Kelvin</option>
+                   
+                </select>
+                <br/>
+                <label >VALOR FINAL </label>
+                <br/>
+                <select id ="opcion2" name="opcion2" data-validation="required">
+                    <option id="celsius" value="celsius" style="font-size:15px;">Celsius</option>
+                    <option id="fahrenheit" value="fahrenheit"style="font-size:15px;">Fahrenheit</option>
+                    <option id="kelvin" value="kelvin"style="font-size:15px;">Kelvin</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="conver" style="margin-top: -20px;">
+            <span id="num" onclick="temp();">CONVERTIR</span>
+        </div>
+        <script type="text/javascript" src="js/funciones.js"></script>
+    </body>
+    
+</html>
